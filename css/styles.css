@@ -52,12 +52,12 @@
 .grilla{
     display: grid;
     grid-template-areas: 
-    "cabecera"
-    "deseo"
-    "leyenda1"
-    "leyenda4"
-    "footer";
-    grid-template-columns: 1fr;
+    "cabecera cabecera cabecera"
+    "deseo    deseo    deseo   "
+    "leyenda1 leyenda2 leyenda3"
+    "leyenda4 leyenda5 leyenda6"
+    "footer   footer   footer  ";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 0.5fr 1.45fr 1.45fr 0.5fr;
     gap:10px;
     grid-row-gap: 5px;
@@ -68,7 +68,7 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 li{
@@ -93,29 +93,6 @@ a.navPpal {
     font-style: oblique;
     font-weight: bold;
 }
-/*a.lnavPpal{
-    /*color:red;
-    background-color:rgb(0, 255, 242);
-    font-style: oblique;
-    font-weight: bold;
-    border-color: blueviolet;
-    box-shadow: rgb(255, 0, 170);
-    border: 10px double red ;
-    padding-bottom: 20px;
-    margin-top: 30px;
-}*/
-/*img{
-    border: 5px solid blue ;
-}*/
-/*img.logoppal{
-    border: 2px solid red 
-}*/
-
-/*.sflex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}*/
 .icon{
     width:  30px;
     height: 30px;
@@ -133,13 +110,30 @@ a.navPpal {
 .pie {
     background: none;
 }
+
 h1 {
-    /*color:black;
+    color:black;
     padding: 20px;
     margin: 10px 300px 10px 300px;
-    border: 5px solid black;
-    top:40px;*/
+    border: 5px  black;
+    top:40px;
     font-size: medium;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+}
+.border {
+    display: table;
+}
+.border p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.leyenda3 img{
+    margin-left: 150px;
+}
+.leyenda6 img{
+    margin-left: 130px;
 }
