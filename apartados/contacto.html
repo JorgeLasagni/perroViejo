@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>JML - Primera Entrega</title></head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html"><img class="logo" src="../imagenes/logods.jpg" alt="logo" ></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a  href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a  href="../apartados/tienda.html">TIENDA</a>
+                </li>
+                <li>
+                    <a  href="../apartados/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="navPpal" href="../apartados/contacto.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a  href="../apartados/noticias.html">NOTICIAS</a>
+                </li>
+                <li>
+                    <a  href="../apartados/faqs.html">DUDAS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>DOGGY STYLE QUIERE SER EL SISTEMA INTEGRAL DE BIENESTAR PARA TU MASCOTA</h1>
+        <div id="after_submit"></div>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <legend>Ponete en contacto con nosotros</legend>
+            <br>
+            <div class="row">
+            <label class="required" for="name">Nombre y Apellido:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" style="outline: none;"/><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="email">Correo Electrónico:</label><br />
+            <input id="email" class="input" name="email" type="email" value="" size="30" style="outline: none; /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="message">Necesito ayuda con:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30" style="min-height: 100px ; min-width: 240px; max-width: 240px; outline: none;"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+          </div>
+            
+            <input id="submit_button" type="submit" value="Enviar correo" />
+            <input type="reset" value="Borrar contenidos">
+        </form>
+    </main>
+</body>
+<footer>
+    <div class="redes">
+        <a class="pie" href="https://facebook.com"  target="_blank"> <img class="icon" src="../imagenes/facebook.svg"  alt=""></a>
+        <a class="pie" href="https://instagram.com" target="_blank"> <img class="icon" src="../imagenes/instagram.svg" alt=""></a>
+        <a class="pie" href="https://twitter.com"   target="_blank"> <img class="icon" src="../imagenes/twitter.svg"   alt=""></a>
+        <a class="pie" href="https://web.whatsapp.com/send?phone=+5491150021672" target="_blank"> <img class="icon" src="../imagenes/whatsapp.svg" alt=""></a>
+    </div>
+</footer>
+</html>
