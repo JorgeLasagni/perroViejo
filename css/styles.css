@@ -1,139 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+/*mobile first 0px a 500px*/
 *{
     margin: 0;
     padding: 0;
 }
-.border {
-    border: 1px solid black;
-}
-.grilla{
-    width: 100%;
-    height: 100vh;
-}
-/*declarar nombres de las etiquetas para la grilla por área*/
-.cabecera{
-    grid-area: cabecera;
-    background-color: blue;
-}
-.deseo{
-    grid-area: deseo;
-    background-color: rgb(255, 0, 170);
-}
-.leyenda1{
-    grid-area: leyenda1;
-    background-color: rgb(43, 255, 0);
-}
-.leyenda2{
-    grid-area: leyenda2;
-    background-color: rgb(43, 255, 0);
 
+body{
+    background-color: rgb(251, 127, 255);
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.leyenda3{
-    grid-area: leyenda3;
-    background-color: rgb(43, 255, 0); 
-}
-.leyenda4{
-    grid-area: leyenda4;
-    background-color: rgb(43, 255, 0);
-}
-
-.leyenda5{
-    grid-area: leyenda5;
-    background-color: rgb(43, 255, 0);
-}
-.leyenda6{
-    grid-area: leyenda6;
-    background-color: rgb(43, 255, 0);
-}
-.footer{
-    grid-area: footer;
+header{
     background-color: rgb(100, 114, 237);
-    margin-bottom: 0;
-}
-.grilla{
-    display: grid;
-    grid-template-areas: 
-    "cabecera cabecera cabecera"
-    "deseo    deseo    deseo   "
-    "leyenda1 leyenda2 leyenda3"
-    "leyenda4 leyenda5 leyenda6"
-    "footer   footer   footer  ";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr 1.45fr 1.45fr 0.5fr;
-    gap:10px;
-    grid-row-gap: 5px;
+    font-size: medium;
+    justify-content: center;
 }
 
 ul{
     list-style-type:none;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 50px;
+    flex-direction: column;
 }
 
 li{
     display: inline-block;
 }
 
-nav ul{
-    margin-left: 300px; 
-}
-
 a {
     text-decoration:none;
     color:black;
-    padding: 10px;
-    padding-left: 15px;
-    background-color:blue;
 }
 
-a.navPpal {
-    color:red;
-    background-color:rgb(0, 255, 242);
-    font-style: oblique;
-    font-weight: bold;
+footer{
+    background-color: rgb(100, 114, 237);
+    margin-bottom: 0;
+}
+/*--------------------------------------*/
+/*Declaración de áreas para la grilla*/
+header{
+    grid-area: cabecera;
+}
+h1{
+    grid-area: deseo;
+}
+.explicacion{
+    grid-area: explicacion;
+}
+footer{
+    grid-area: pie;
+}
+/*------------------------------------------*/
+/*Acomodo para 0 a 500px*/
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "cabecera"
+    "deseo"
+    "explicacion"
+    "pie";
+}
+
+.explicacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.parrafo{
+    gap: 5px;
+    border: 3px solid blue;
+    margin-top: 4px;
+    justify-content: center;
+    height: auto;
+}
+h1{
+    border: 3px solid blue;
+    background-color: royalblue;
+}
+footer{
+    background-color: rgb(100, 114, 237);
+    margin-bottom: 0;
+   /* padding: 5px;*/
 }
 .icon{
     width:  30px;
     height: 30px;
-    border-style: double;
-    margin-top: 5px;  
+    border: none;
+    margin-top: 5px;
 }
-
 .redes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-decoration:none;  
 }
-
 .pie {
     background: none;
 }
+/*--------------------------------------------------*/
+@media (min-width:500px){
+    .grilla{
+        display: grid;
+        grid-template-areas:
+        "cabecera    cabecera"
+        "deseo       deseo"
+        "explicacion explicacion"
+        "pie         pie";
+        /*gap: 20px;*/
+    }
+    
+    .explicacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .parrafo{
+        gap: 5px;
+        border: 3px solid blue;
+        margin-top: 4px;
+        margin-right: 4px;
+        height: auto;
+    }
+    h1{
+        border: 3px solid blue;
+        background-color: royalblue;
+    }
+    .icon{
+        width:  50px;
+        height: 50px;
+        border: none;
+        margin-top: 5px;
+    }
+}
 
-h1 {
-    color:black;
-    padding: 20px;
-    margin: 10px 300px 10px 300px;
-    border: 5px  black;
-    top:40px;
-    font-size: medium;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-}
-.border {
-    display: table;
-}
-.border p {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: medium;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-}
-.leyenda3 img{
-    margin-left: 150px;
-}
-.leyenda6 img{
-    margin-left: 130px;
+/*--------------------------------------------------*/
+@media (min-width:768px){
+    
+    .grilla{
+        display: grid;
+        grid-template-areas:
+        "cabecera    cabecera    cabecera"
+        "deseo       deseo       deseo"
+        "explicacion explicacion explicacion"
+        "pie         pie         pie";
+        /*gap: 20px;*/
+    }
+    
+    .explicacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    .parrafo{
+        gap: 5px;
+        border: 3px solid blue;
+        margin-top: 4px;
+        margin-right: 4px;
+        height: auto;
+    }
+
+    h1{
+        border: 3px solid blue;
+        background-color: royalblue;
+    }
+
+    .icon{
+        width:  50px;
+        height: 50px;
+        border: none;
+        margin-top: 5px;
+    }
+    ul{
+        list-style-type:none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    li{
+        display: inline-block;
+    }
+    
+    a {
+        text-decoration:none;
+        color:black;
+        padding: 5px;
+    }
+    
+    
+    /*nav ul{
+        flex-direction: column;
+        border:2px solid goldenrod
+    }*/
+    
+    a.navPpal {
+        color:red;
+        background-color:rgb(0, 255, 242);
+        font-style: oblique;
+        font-weight: bold;
+    }     
 }
