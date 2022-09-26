@@ -326,6 +326,8 @@ img{
     font-weight: bolder;
 }
 .boxt:hover{
+    transform: scale(1.1);
+    transition: all 2s ease;
     filter: blur(2.0px);
     /*filter: saturate(2.5);*/
     /*filter: invert(5px);*/
