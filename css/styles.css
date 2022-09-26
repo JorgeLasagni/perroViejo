@@ -274,6 +274,8 @@ img{
 .box:hover{
     transform: scale(1.5);
     transition: all 2s ease;
+    transform: scale(-1.5) rotate(180deg) ;
+
 }
 .box1:hover{
     transform: scale(1.5) rotate(360deg) ;
@@ -292,11 +294,13 @@ img{
         background-color: blueviolet;
     /*background: rgb(34,193,195);
     background: radial-gradient(0deg, rgba(34,193,195,1) 0%, rgba(129,37,209,1) 24%, rgba(60,225,168,1) 51%, rgba(211,52,183,1) 76%, rgba(58,45,253,1) 100%);*/
+    /*transform: scale(1.5) rotate(360deg)*/
     }
 }
 .box3:hover{
     transform: scale(1.5) rotate(360deg) ;
     transition: all 2s ease;
+    /*transform: scale(-1.5) rotate(360deg)*/
 }
 /*.box2{
     background-color: aqua;
@@ -320,4 +324,46 @@ img{
     text-align: center;
     font-family: 'Poppins',sans-serif;
     font-weight: bolder;
+}
+.boxt:hover{
+    filter: blur(2.0px);
+    /*filter: saturate(2.5);*/
+    /*filter: invert(5px);*/
+}
+/*.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.t-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.t-centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}*/
+figure{
+    /*border: 2px solid red;*/
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+figcaption{
+    color: white;
+    transition: all 10s ease;
+    /*display: none;*/
+    position: absolute;
+    left: 0;
+    bottom: -150;
+    width: 90%;
+    padding: 5%;
+    vertical-align: middle;
+}
+figure:hover figcaption{
+    /*display: block;*/
+    bottom: 0px;
 }
