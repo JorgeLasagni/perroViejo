@@ -38,7 +38,6 @@ a {
 }
 
 footer{
-    /*background-color: rgb(100, 114, 237);*/
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(129,37,209,1) 24%, rgba(60,225,168,1) 51%, rgba(211,52,183,1) 76%, rgba(58,45,253,1) 100%);
     margin-bottom: 0;
@@ -63,6 +62,7 @@ h1{
 a:hover{
     color: darkmagenta;
 }
+
 /*--------------------------------------*/
 /*Declaración de áreas para la grilla*/
 header{
@@ -171,7 +171,6 @@ img{
         "deseo       deseo"
         "explicacion explicacion"
         "pie         pie";
-        /*gap: 20px;*/
     }
     
     .explicacion{
@@ -314,7 +313,6 @@ img{
 
 @keyframes cambio-color {
     25%{
-        /*background-color: aqua;*/
         background: rgb(63,94,251);
         background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     }
@@ -325,8 +323,8 @@ img{
 .box3:hover{
     transform: scale(1.5) rotate(360deg) ;
     transition: all 2s ease;
-    /*transform: scale(-1.5) rotate(360deg)*/
 }
+
 /*Formulario de Contacto*/
 .iniform{
     margin-top: 50px;
@@ -334,6 +332,7 @@ img{
 .finform{
     margin-bottom: 50px;
 }
+
 /*--------------------------------------*/
 .videito{
     display:block; 
@@ -352,12 +351,9 @@ img{
     transform: scale(1.1);
     transition: all 2s ease;
     filter: blur(2.0px);
-    /*filter: saturate(2.5);*/
-    /*filter: invert(5px);*/
 }
 
 figure{
-    /*border: 2px solid red;*/
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -366,7 +362,6 @@ figure{
 figcaption{
     color: white;
     transition: all 10s ease;
-    /*display: none;*/
     position: absolute;
     left: 0;
     bottom: -150;
@@ -376,6 +371,5 @@ figcaption{
 }
 
 figure:hover figcaption{
-    /*display: block;*/
     bottom: 0px;
 }
