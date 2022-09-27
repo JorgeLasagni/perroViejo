@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
 /*mobile first 0px a 500px*/
 *{
     margin: 0;
@@ -14,6 +15,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
 header{
     background-color: rgb(100, 114, 237);
     font-size: medium;
@@ -41,11 +43,13 @@ footer{
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(129,37,209,1) 24%, rgba(60,225,168,1) 51%, rgba(211,52,183,1) 76%, rgba(58,45,253,1) 100%);
     margin-bottom: 0;
 }
+
 h1{
     border: 3px solid blue;
     background: rgb(3,36,0);
     background: linear-gradient(90deg, rgba(3,36,0,0.9836309523809523) 0%, rgba(9,121,84,1) 21%, rgba(175,1,236,1) 45%, rgba(0,42,246,1) 75%, rgba(82,255,0,1) 100%);
 }
+
 .h1noticias{
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -55,20 +59,28 @@ h1{
     font-weight: bolder;
     margin-top: 0;
 }
+
+a:hover{
+    color: darkmagenta;
+}
 /*--------------------------------------*/
 /*Declaración de áreas para la grilla*/
 header{
     grid-area: cabecera;
 }
+
 h1{
     grid-area: deseo;
 }
+
 .explicacion{
     grid-area: explicacion;
 }
+
 footer{
     grid-area: pie;
 }
+
 /*------------------------------------------*/
 /*Acomodo para 0 a 500px*/
 .grilla{
@@ -86,6 +98,7 @@ footer{
     grid-template-rows: 1fr;
     justify-items: center;
 }
+
 .grillatienda{
     display: grid;
     grid-template-areas:
@@ -109,39 +122,46 @@ footer{
     justify-content: center;
     height: auto;
 }
+
 footer{
     background-color: rgb(100, 114, 237);
     margin-bottom: 0;
-   /* padding: 5px;*/
 }
+
 .icon{
     width:  30px;
     height: 30px;
     border: none;
     margin-top: 5px;
 }
+
 .redes{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .pie {
     background: none;
 }
+
 a.navPpal {
     color:red;
     background-color:rgb(0, 255, 242);
     font-style: oblique;
     font-weight: bold;
 }   
+
 img{
     border: 5px solid blue;
     margin-top: 5px;
 }  
+
 .paquito{
     width: auto;
     height: auto;
 }
+
 /*--------------------------------------------------*/
 @media (min-width:500px){
     .grilla{
@@ -160,6 +180,7 @@ img{
         grid-template-rows: 1fr;
         justify-items: center;
     }
+
     .grillatienda{
         display: grid;
         grid-template-areas:
@@ -183,6 +204,7 @@ img{
         margin-right: 4px;
         height: auto;
     }
+
     .icon{
         width:  50px;
         height: 50px;
@@ -210,6 +232,7 @@ img{
         grid-template-rows: 1fr;
         justify-items: center;
     }
+
     .grillatienda{
         display: grid;
         grid-template-areas:
@@ -225,6 +248,7 @@ img{
         grid-template-rows: 1fr;
         justify-items: center;
     }
+
     .parrafo{
         gap: 5px;
         border: 3px solid blue;
@@ -232,19 +256,20 @@ img{
         margin-right: 4px;
         height: auto;
     }
+
     .icon{
         width:  50px;
         height: 50px;
         border: none;
         margin-top: 5px;
     }
+
     ul{
         list-style-type:none;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-
     }
     
     li{
@@ -253,10 +278,9 @@ img{
     
     a {
         text-decoration:none;
-        color:black;
+        /*color:black;*/
         padding: 5px;
     }
-    
 }
 
 .logoppal{
@@ -265,25 +289,29 @@ img{
     border-style: double;
     border-color:red;
 }
+
 .logo{
     margin-top: 1.5px;
     border: 1.5px;
     border-style: double;
     border-color: black;
 }
+
 .box:hover{
     transform: scale(1.5);
     transition: all 2s ease;
     transform: scale(-1.5) rotate(180deg) ;
-
 }
+
 .box1:hover{
     transform: scale(1.5) rotate(360deg) ;
     transition: all 2s ease;
 }
+
 .box2:hover{
     animation: cambio-color 4s;
 }
+
 @keyframes cambio-color {
     25%{
         /*background-color: aqua;*/
@@ -292,9 +320,6 @@ img{
     }
     75%{
         background-color: blueviolet;
-    /*background: rgb(34,193,195);
-    background: radial-gradient(0deg, rgba(34,193,195,1) 0%, rgba(129,37,209,1) 24%, rgba(60,225,168,1) 51%, rgba(211,52,183,1) 76%, rgba(58,45,253,1) 100%);*/
-    /*transform: scale(1.5) rotate(360deg)*/
     }
 }
 .box3:hover{
@@ -302,29 +327,27 @@ img{
     transition: all 2s ease;
     /*transform: scale(-1.5) rotate(360deg)*/
 }
-/*.box2{
-    background-color: aqua;
-}
-.box{
-    transition: all 2s ease
-}*/
+/*Formulario de Contacto*/
 .iniform{
     margin-top: 50px;
 }
 .finform{
     margin-bottom: 50px;
 }
+/*--------------------------------------*/
 .videito{
     display:block; 
     width:50%;
     margin-left: 25%;
     margin-right: 30%;
 }
+
 .h1noticias{
     text-align: center;
     font-family: 'Poppins',sans-serif;
     font-weight: bolder;
 }
+
 .boxt:hover{
     transform: scale(1.1);
     transition: all 2s ease;
@@ -332,28 +355,14 @@ img{
     /*filter: saturate(2.5);*/
     /*filter: invert(5px);*/
 }
-/*.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.t-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.t-centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}*/
+
 figure{
     /*border: 2px solid red;*/
     display: inline-block;
     position: relative;
     overflow: hidden;
 }
+
 figcaption{
     color: white;
     transition: all 10s ease;
@@ -365,6 +374,7 @@ figcaption{
     padding: 5%;
     vertical-align: middle;
 }
+
 figure:hover figcaption{
     /*display: block;*/
     bottom: 0px;
