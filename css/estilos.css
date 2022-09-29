@@ -141,7 +141,7 @@ footer{
 }
 
 footer{
-    background-color: rgb(100, 114, 237);
+    /*background-color: rgb(100, 114, 237);*/
     margin-bottom: 0;
 }
 
@@ -156,6 +156,11 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+}
+.fredes {
+    margin-top: 10px;
+    border: solid blue; 
 }
 
 .pie {
