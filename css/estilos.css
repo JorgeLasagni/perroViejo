@@ -161,7 +161,7 @@ footer{
 .fredes {
     margin-top: 10px;
     /*border: solid blue;*/
-    border: double blue;
+    border: double rgb(255, 0, 0);
 }
 
 .pie {
