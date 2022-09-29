@@ -160,7 +160,8 @@ footer{
 }
 .fredes {
     margin-top: 10px;
-    border: solid blue; 
+    /*border: solid blue;*/
+    border: double blue;
 }
 
 .pie {
