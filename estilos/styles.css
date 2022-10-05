@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
 html {
-  font-size: 51%;
+  font-size: 90%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -12,7 +12,7 @@ html {
 
 /*mobile first 0px a 500px*/
 body {
-  background-color: rgb(197, 127, 255);
+  background-color: rgb(212, 90, 206);
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
@@ -143,7 +143,7 @@ footer {
 }
 
 footer {
-  background-color: rgb(100, 114, 237);
+  /*background-color: rgb(100, 114, 237);*/
   margin-bottom: 0;
 }
 
@@ -158,6 +158,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.fredes {
+  margin-top: 10px;
+  /*border: solid blue;*/
+  border: double rgb(255, 0, 0);
 }
 
 .pie {
