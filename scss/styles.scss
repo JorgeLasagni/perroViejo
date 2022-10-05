@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+@import "fuentes";
+@import "generales";
+
 
 /*mobile first 0px a 500px*/
-*{
-    margin: 0;
-    padding: 0;
-}
+
+
 
 body{
-    background-color: rgb(251, 127, 255);
+    background-color: rgb(197, 127, 255);
     text-align: center;
     font-family: 'Poppins',sans-serif;
     font-weight: bolder;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.bodyfaqs{
+    background-color: chartreuse;
+    background-color: transparent;
+    background-color: navajowhite;
 }
 
 header{
