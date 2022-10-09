@@ -15,3 +15,14 @@ header{
 footer{
     margin-bottom: 0;
 }
+section{
+    p{
+        gap: 5px;
+        border: 3px solid blue;
+        margin-top: 4px;
+        margin-right: 4px;
+        height: auto;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;    
+    }
+}

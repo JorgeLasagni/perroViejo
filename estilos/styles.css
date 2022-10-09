@@ -20,6 +20,16 @@ footer {
   margin-bottom: 0;
 }
 
+section p {
+  gap: 5px;
+  border: 3px solid blue;
+  margin-top: 4px;
+  margin-right: 4px;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,11 +37,6 @@ footer {
 
 body {
   background-color: rgb(212, 90, 206);
-}
-
-footer {
-  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(129, 37, 209) 24%, rgb(60, 225, 168) 51%, rgb(211, 52, 183) 76%, rgb(58, 45, 253) 100%);
-  margin-bottom: 0;
 }
 
 article h1 {
@@ -54,7 +59,7 @@ article h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 body {
@@ -63,12 +68,19 @@ body {
   min-height: 100vh;
 }
 
+.videito {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 30%;
+}
+
 header {
   background-color: rgb(100, 114, 237);
-  padding: 3rem 0;
+  /*padding: 3rem 0;*/
 }
 header nav {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 header nav ul {
@@ -105,9 +117,27 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   padding: 5px;
-  /*@include responsive(desk){
-      padding: 5px;
-  }*/
+}
+
+.logoppal {
+  margin-top: 1.5px;
+  border: 1.5px;
+  border-style: double;
+  border-color: red;
+}
+
+.logo {
+  margin-top: 1.5px;
+  border: 1.5px;
+  border-style: double;
+  border-color: black;
+}
+
+a.navPpal {
+  color: red;
+  background-color: rgb(0, 255, 242);
+  font-style: oblique;
+  font-weight: bold;
 }
 
 /*--------------------------------------*/
@@ -344,256 +374,47 @@ footer {
   grid-template-columns: 1fr;
 }
 
-/*mobile first 0px a 500px*/
-/*.bodyfaqs{
-    background-color: transparent;
-}*/
-/*a:hover{
-    color: darkmagenta;
-}*/
-/*------------------------------------------*/
-/*Acomodo para 0 a 500px*/
-/*.grilla{
-    display: grid;
-    grid-template-areas:
-    "cabecera"
-    "deseo"
-    "explicacion"
-    "pie";
-}*/
-/*.explicacion{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}*/
-/*.grillatienda{
-    display: grid;
-    grid-template-areas:
-    "cabecera"
-    "deseo"
-    "explicaciontienda"
-    "pie";
-}*/
-/*.explicaciontienda{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}*/
-/*.grillatiendat{
-    display: grid;
-    grid-template-areas:
-    "cabecera"
-    "deseo"
-    "explicaciontiendat"
-    "pie";
-}*/
-/*.explicaciontiendat{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}*/
-.parrafo {
-  gap: 5px;
-  border: 3px solid blue;
-  margin-top: 4px;
-  justify-content: center;
-  height: auto;
-  font-family: "Poppins", sans-serif;
+/*Formulario de Contacto*/
+.iniform {
+  margin-top: 50px;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
-  border: none;
-  margin-top: 5px;
+.finform {
+  margin-bottom: 50px;
 }
 
-.redes {
+footer {
+  margin-top: 10px;
+  border: double rgb(255, 0, 0);
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.fredes {
-  margin-top: 10px;
-  /*border: solid blue;*/
-  border: double rgb(255, 0, 0);
-}
-
-.pie {
   background: none;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(129, 37, 209) 24%, rgb(60, 225, 168) 51%, rgb(211, 52, 183) 76%, rgb(58, 45, 253) 100%);
+  margin-bottom: 0;
 }
-
-a.navPpal {
-  color: red;
-  background-color: rgb(0, 255, 242);
-  font-style: oblique;
-  font-weight: bold;
-}
-
-img {
+footer div a img {
   border: 5px solid blue;
   margin-top: 5px;
+  border: none;
 }
-
-/*.paquito{
-    width: auto;
-    height: auto;
-}*/
-/*--------------------------------------------------*/
-@media (min-width: 500px) {
-  /*.grilla{
-      display: grid;
-      grid-template-areas:
-      "cabecera    cabecera"
-      "deseo       deseo"
-      "explicacion explicacion"
-      "pie         pie";
-  }*/
-  /*.explicacion{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      justify-items: center;
-  }*/
-  /*.grillatienda{
-      display: grid;
-      grid-template-areas:
-      "cabecera           cabecera"
-      "deseo              deseo"
-      "explicaciontienda  explicaciontienda"
-      "pie                pie";
-  }*/
-  /*.explicaciontienda{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      justify-items: center;
-  }*/
-  /*.grillatiendat{
-      display: grid;
-      grid-template-areas:
-      "cabecera           cabecera"
-      "deseo              deseo"
-      "explicaciontiendat explicaciontiendat"
-      "pie                pie";
-  }*/
-  /*.explicaciontiendat{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      justify-items: center;
-  }*/
-  .parrafo {
-    gap: 5px;
-    border: 3px solid blue;
-    margin-top: 4px;
-    margin-right: 4px;
-    height: auto;
-    font-family: "Poppins", sans-serif;
-  }
-  .icon {
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: 5px;
+@media only screen and (max-width: 500px) {
+  footer div a img {
+    width: 30px;
+    height: 30px;
   }
 }
-/*--------------------------------------------------*/
-@media (min-width: 768px) {
-  /*.grilla{
-      display: grid;
-      grid-template-areas:
-      "cabecera    cabecera    cabecera"
-      "deseo       deseo       deseo"
-      "explicacion explicacion explicacion"
-      "pie         pie         pie";
-      /*gap: 20px;
-  }*/
-  /*.explicacion{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      justify-items: center;
-  }*/
-  /*.grillatienda{
-      display: grid;
-      grid-template-areas:
-      "cabecera           cabecera            cabecera"
-      "deseo              deseo               deseo"
-      "explicaciontienda  explicaciontienda   explicaciontienda"
-      "pie                pie                 pie";
-  }*/
-  /*.explicaciontienda{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      justify-items: center;
-  }*/
-  /*.grillatiendat{
-      display: grid;
-      grid-template-areas:
-      "cabecera           cabecera          "
-      "deseo              deseo             "
-      "explicaciontiendat explicaciontiendat"
-      "pie                pie               ";
-  }
-
-  .explicaciontiendat{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      justify-items: center;
-  }*/
-  .parrafo {
-    gap: 5px;
-    border: 3px solid blue;
-    margin-top: 4px;
-    margin-right: 4px;
-    height: auto;
-    font-family: "Poppins", sans-serif;
-  }
-  .icon {
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: 5px;
+@media only screen and (min-width: 500px) {
+  footer div a img {
+    width: 40px;
+    height: 40px;
   }
 }
-/*--------------------------------------------------*/
-/*@media (max-width:850px){
-
-    .grillatiendat{
-        display: grid;
-        grid-template-areas:
-        "cabecera           "
-        "deseo              "
-        "explicaciontiendat "
-        "pie                ";
-    }
-
-    .explicaciontiendat{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-    }
-}*/
-.logoppal {
-  margin-top: 1.5px;
-  border: 1.5px;
-  border-style: double;
-  border-color: red;
-}
-
-.logo {
-  margin-top: 1.5px;
-  border: 1.5px;
-  border-style: double;
-  border-color: black;
+@media only screen and (min-width: 768px) {
+  footer div a img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .box:hover {
@@ -636,43 +457,6 @@ img {
   transition: all 2s ease;
 }
 
-/*Formulario de Contacto*/
-.iniform {
-  margin-top: 50px;
-}
-
-.finform {
-  margin-bottom: 50px;
-}
-
-/*--------------------------------------*/
-.videito {
-  display: block;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 30%;
-}
-
-.h1noticias {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-}
-
-.logoppal {
-  margin-top: 1.5px;
-  border: 1.5px;
-  border-style: double;
-  border-color: red;
-}
-
-.logo {
-  margin-top: 1.5px;
-  border: 1.5px;
-  border-style: double;
-  border-color: black;
-}
-
 .box:hover {
   transform: scale(1.5);
   transition: all 2s ease;
@@ -703,28 +487,76 @@ img {
   transition: all 2s ease;
 }
 
-/*Formulario de Contacto*/
-.iniform {
-  margin-top: 50px;
+.box4:hover {
+  -webkit-animation: temblor 0.9s 2;
+          animation: temblor 0.9s 2;
 }
 
-.finform {
-  margin-bottom: 50px;
+@-webkit-keyframes temblor {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(20px, 0px);
+  }
+  30% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(20px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(20px, 0px);
+  }
+  70% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(20px, 0px);
+  }
+  90% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(20px, 0px);
+  }
 }
 
-/*--------------------------------------*/
-/*.videito{
-    display:block; 
-    width:100%;
-    margin-left: 25%;
-    margin-right: 30%;
-}*/
-.h1noticias {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
+@keyframes temblor {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(20px, 0px);
+  }
+  30% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(20px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(20px, 0px);
+  }
+  70% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(20px, 0px);
+  }
+  90% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(20px, 0px);
+  }
 }
-
 .boxt:hover {
   transform: scale(1.1);
   transition: all 2s ease;
@@ -752,4 +584,162 @@ figure:hover figcaption {
   bottom: 0px;
 }
 
+/*.icon{
+    width:  30px;
+    height: 30px;
+    border: none;
+    margin-top: 5px;
+}*/
+/*.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}*/
+/*.fredes {
+    margin-top: 10px;
+    border: double rgb(255, 0, 0);
+}*/
+/*.pie {
+    background: none;
+}*/
+/*a.navPpal {
+    color:red;
+    background-color:rgb(0, 255, 242);
+    font-style: oblique;
+    font-weight: bold;
+}*/
+/*img{
+    border: 5px solid blue;
+    margin-top: 5px;
+}*/
+/*--------------------------------------------------*/
+/*@media (min-width:500px){
+    .icon{
+        width:  50px;
+        height: 50px;
+        border: none;
+        margin-top: 5px;
+    }
+}*/
+/*--------------------------------------------------*/
+/*@media (min-width:768px){
+.icon{
+        width:  50px;
+        height: 50px;
+        border: none;
+        margin-top: 5px;
+    }
+}*/
+/*--------------------------------------------------*/
+/*.logoppal{
+    margin-top: 1.5px;
+    border: 1.5px;
+    border-style: double;
+    border-color:red;
+}*/
+/*.logo{
+    margin-top: 1.5px;
+    border: 1.5px;
+    border-style: double;
+    border-color: black;
+}*/
+/*.box:hover{
+    transform: scale(1.5);
+    transition: all 2s ease;
+    transform: scale(-1.5) rotate(180deg) ;
+}
+
+.box1:hover{
+    transform: scale(1.5) rotate(360deg) ;
+    transition: all 2s ease;
+}
+
+.box2:hover{
+    animation: cambio-color 4s;
+}
+
+@keyframes cambio-color {
+    25%{
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+    75%{
+        background-color: blueviolet;
+    }
+}
+.box3:hover{
+    transform: scale(1.5) rotate(360deg) ;
+    transition: all 2s ease;
+}
+
+.box:hover{
+    transform: scale(1.5);
+    transition: all 2s ease;
+    transform: scale(-1.5) rotate(180deg) ;
+}
+
+.box1:hover{
+    transform: scale(1.5) rotate(-360deg) ;
+    transition: all 2s ease;
+}
+
+.box2:hover{
+    animation: cambio-color 4s;
+}
+
+@keyframes cambio-color {
+    25%{
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+    75%{
+        background-color: blueviolet;
+    }
+}
+.box3:hover{
+    transform: scale(1.5) rotate(360deg) ;
+    transition: all 2s ease;
+}
+.box4:hover{
+    animation: temblor 0.9s 2;
+}
+@keyframes temblor{
+    0%{transform: translate(0px,0px);}
+    10%{transform: translate(20px,0px);}
+    30%{transform: translate(0px,0px);}
+    40%{transform: translate(20px,0px);}
+    50%{transform: translate(0px,0px);}
+    60%{transform: translate(20px,0px);}
+    70%{transform: translate(0px,0px);}
+    80%{transform: translate(20px,0px);}
+    90%{transform: translate(0px,0px);}
+    100%{transform: translate(20px,0px);}
+}
+
+.boxt:hover{
+    transform: scale(1.1);
+    transition: all 2s ease;
+    filter: blur(2.0px);
+}
+
+figure{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+figcaption{
+    color: white;
+    transition: all 10s ease;
+    position: absolute;
+    left: 0;
+    bottom: -150;
+    width: 90%;
+    padding: 5%;
+    vertical-align: middle;
+}
+figure:hover figcaption{
+    bottom: 0px;
+}*/
 /*Fin del CSS--------------------------------*//*# sourceMappingURL=styles.css.map */

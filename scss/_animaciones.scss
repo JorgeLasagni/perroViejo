@@ -1,85 +1,4 @@
-@import "fuentes";
-@import "generales";
-@import "mediasq";
-@import "cabecera";
-@import "grillasidx";
-@import "grillastnd";
-@import "grillasnst";
-@import "grillasfqs";
-@import "grillasctc";
-@import "pie";
-@import "animaciones";
-
-/*.icon{
-    width:  30px;
-    height: 30px;
-    border: none;
-    margin-top: 5px;
-}*/
-
-/*.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}*/
-
-/*.fredes {
-    margin-top: 10px;
-    border: double rgb(255, 0, 0);
-}*/
-
-/*.pie {
-    background: none;
-}*/
-
-/*a.navPpal {
-    color:red;
-    background-color:rgb(0, 255, 242);
-    font-style: oblique;
-    font-weight: bold;
-}*/ 
-
-/*img{
-    border: 5px solid blue;
-    margin-top: 5px;
-}*/
-
-/*--------------------------------------------------*/
-/*@media (min-width:500px){
-    .icon{
-        width:  50px;
-        height: 50px;
-        border: none;
-        margin-top: 5px;
-    }
-}*/
-
-/*--------------------------------------------------*/
-/*@media (min-width:768px){
-.icon{
-        width:  50px;
-        height: 50px;
-        border: none;
-        margin-top: 5px;
-    }
-}*/
-/*--------------------------------------------------*/
-/*.logoppal{
-    margin-top: 1.5px;
-    border: 1.5px;
-    border-style: double;
-    border-color:red;
-}*/
-
-/*.logo{
-    margin-top: 1.5px;
-    border: 1.5px;
-    border-style: double;
-    border-color: black;
-}*/
-
-/*.box:hover{
+.box:hover{
     transform: scale(1.5);
     transition: all 2s ease;
     transform: scale(-1.5) rotate(180deg) ;
@@ -176,5 +95,4 @@ figcaption{
 }
 figure:hover figcaption{
     bottom: 0px;
-}*/
-/*Fin del CSS--------------------------------*/
+}
