@@ -1,0 +1,58 @@
+body{   
+        flex-direction: column;
+        display: flex;
+        min-height: 100vh;
+}
+/*--------------------------------------*/
+/*Declaración de áreas para la grilla*/
+header{
+    grid-area: cabecera;
+}
+h1{
+    grid-area: deseo;
+}
+.explicacion{
+    grid-area: explicacion;
+}
+footer{
+    grid-area: pie;
+}
+
+.grilla{
+    display: grid;
+    @include responsive(movile){
+        grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacion"
+        "pie";
+    }
+    @include responsive(tablet){
+        grid-template-areas:
+        "cabecera    cabecera"
+        "deseo       deseo"
+        "explicacion explicacion"
+        "pie         pie";
+    }
+    @include responsive(desk){
+        grid-template-areas:
+        "cabecera       cabecera    cabecera"
+        "deseo          deseo       deseo"
+        "explicacion    explicacion explicacion"
+        "pie            pie         pie";
+    }
+}
+.explicacion{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr;
+    @include responsive(movile){
+        grid-template-columns: 1fr;
+    } 
+    @include responsive(tablet){
+        grid-template-columns: 1fr 1fr;
+    }   
+    @include responsive(desk){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}

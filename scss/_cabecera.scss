@@ -1,0 +1,39 @@
+header{
+    background-color: rgb(100, 114, 237);
+    padding: 3rem 0;
+    nav{
+        width: 80%;
+        margin: 0 auto;
+        ul{
+            list-style-type:none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            @include responsive(movile) {
+                flex-direction: column;
+            }
+            @include responsive(tablet) {
+                flex-direction: column;
+            }
+            @include responsive(desk) {
+                flex-direction: row;
+            }
+            @include responsive(particular) {
+                flex-direction: column;
+            }
+            li{
+                display: inline-block;
+
+                a{
+                    text-decoration:none;
+                    color:black;
+                    padding: 5px;
+                    /*@include responsive(desk){
+                        padding: 5px;
+                    }*/
+                }
+            }
+        }
+    }
+}

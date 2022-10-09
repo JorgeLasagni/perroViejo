@@ -1,87 +1,38 @@
 @import "fuentes";
 @import "generales";
-
+@import "mediasq";
+@import "cabecera";
+@import "grillas";
 
 /*mobile first 0px a 500px*/
 
-body{   
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.bodyfaqs{
-    background-color: chartreuse;
+/*.bodyfaqs{
     background-color: transparent;
-    background-color: navajowhite;
-}
-
-ul{
-    list-style-type:none;
-    display: flex;
-    flex-direction: column;
-}
-
-li{
-    display: inline-block;
-}
-
-a {
-    text-decoration:none;
-    color:black;
-}
-
-/*.h1noticias{
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    text-align: center;
-    font-family: 'Roboto',sans-serif;
-    font-weight: bolder;
-    margin-top: 0;
 }*/
 
-a:hover{
+/*a:hover{
     color: darkmagenta;
-}
+}*/
 
-/*--------------------------------------*/
-/*Declaración de áreas para la grilla*/
-header{
-    grid-area: cabecera;
-}
 
-h1{
-    grid-area: deseo;
-}
 
-.explicacion{
-    grid-area: explicacion;
-}
-
-footer{
-    grid-area: pie;
-}
-.explicacionnot{
-    background-color: aqua;
-}
 /*------------------------------------------*/
 /*Acomodo para 0 a 500px*/
-.grilla{
+/*.grilla{
     display: grid;
     grid-template-areas:
     "cabecera"
     "deseo"
     "explicacion"
     "pie";
-}
+}*/
 
-.explicacion{
+/*.explicacion{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
-}
+}*/
 
 .grillatienda{
     display: grid;
@@ -161,30 +112,26 @@ img{
 .paquito{
     width: auto;
     height: auto;
-    /*width: 100%;
-    height: 100%;*/
 }
 
 /*--------------------------------------------------*/
 @media (min-width:500px){
-    .explicacionnot{
-        background-color: brown;
-    }
-    .grilla{
+    
+    /*.grilla{
         display: grid;
         grid-template-areas:
         "cabecera    cabecera"
         "deseo       deseo"
         "explicacion explicacion"
         "pie         pie";
-    }
+    }*/
     
-    .explicacion{
+    /*.explicacion{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
-    }
+    }*/
 
     .grillatienda{
         display: grid;
@@ -236,25 +183,23 @@ img{
 
 /*--------------------------------------------------*/
 @media (min-width:768px){
-    .explicacionnot{
-        background-color: coral;
-    }
-    .grilla{
+   
+    /*.grilla{
         display: grid;
         grid-template-areas:
         "cabecera    cabecera    cabecera"
         "deseo       deseo       deseo"
         "explicacion explicacion explicacion"
         "pie         pie         pie";
-        /*gap: 20px;*/
-    }
+        /*gap: 20px;
+    }*/
     
-    .explicacion{
+    /*.explicacion{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
-    }
+    }*/
 
     .grillatienda{
         display: grid;
@@ -303,29 +248,10 @@ img{
         margin-top: 5px;
     }
 
-    ul{
-        list-style-type:none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    li{
-        display: inline-block;
-    }
-    
-    a {
-        text-decoration:none;
-        /*color:black;*/
-        padding: 5px;
-    }
 }
 /*--------------------------------------------------*/
 @media (max-width:850px){
-    .explicacionnot{
-        background-color: darkgreen;
-    }
+   
     .grillatiendat{
         display: grid;
         grid-template-areas:

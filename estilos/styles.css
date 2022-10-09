@@ -25,10 +25,6 @@ footer {
   padding: 0;
 }
 
-header {
-  background-color: rgb(100, 114, 237);
-}
-
 body {
   background-color: rgb(212, 90, 206);
 }
@@ -61,45 +57,57 @@ article h1 {
   margin-top: 0;
 }
 
-/*mobile first 0px a 500px*/
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+header {
+  background-color: rgb(100, 114, 237);
+  padding: 3rem 0;
 }
-
-.bodyfaqs {
-  background-color: chartreuse;
-  background-color: transparent;
-  background-color: navajowhite;
+header nav {
+  width: 80%;
+  margin: 0 auto;
 }
-
-ul {
+header nav ul {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
-li {
+@media only screen and (max-width: 500px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 500px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header nav ul {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 850px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+header nav ul li {
   display: inline-block;
 }
-
-a {
+header nav ul li a {
   text-decoration: none;
   color: black;
+  padding: 5px;
+  /*@include responsive(desk){
+      padding: 5px;
+  }*/
 }
 
-/*.h1noticias{
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    text-align: center;
-    font-family: 'Roboto',sans-serif;
-    font-weight: bolder;
-    margin-top: 0;
-}*/
-a:hover {
-  color: darkmagenta;
+body {
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
 }
 
 /*--------------------------------------*/
@@ -120,24 +128,69 @@ footer {
   grid-area: pie;
 }
 
-.explicacionnot {
-  background-color: aqua;
-}
-
-/*------------------------------------------*/
-/*Acomodo para 0 a 500px*/
 .grilla {
   display: grid;
-  grid-template-areas: "cabecera" "deseo" "explicacion" "pie";
+}
+@media only screen and (max-width: 500px) {
+  .grilla {
+    grid-template-areas: "cabecera" "deseo" "explicacion" "pie";
+  }
+}
+@media only screen and (min-width: 500px) {
+  .grilla {
+    grid-template-areas: "cabecera    cabecera" "deseo       deseo" "explicacion explicacion" "pie         pie";
+  }
+}
+@media only screen and (min-width: 768px) {
+  .grilla {
+    grid-template-areas: "cabecera       cabecera    cabecera" "deseo          deseo       deseo" "explicacion    explicacion explicacion" "pie            pie         pie";
+  }
 }
 
 .explicacion {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   justify-items: center;
+  grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 500px) {
+  .explicacion {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .explicacion {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .explicacion {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
+/*mobile first 0px a 500px*/
+/*.bodyfaqs{
+    background-color: transparent;
+}*/
+/*a:hover{
+    color: darkmagenta;
+}*/
+/*------------------------------------------*/
+/*Acomodo para 0 a 500px*/
+/*.grilla{
+    display: grid;
+    grid-template-areas:
+    "cabecera"
+    "deseo"
+    "explicacion"
+    "pie";
+}*/
+/*.explicacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}*/
 .grillatienda {
   display: grid;
   grid-template-areas: "cabecera" "deseo" "explicaciontienda" "pie";
@@ -209,25 +262,24 @@ img {
 .paquito {
   width: auto;
   height: auto;
-  /*width: 100%;
-  height: 100%;*/
 }
 
 /*--------------------------------------------------*/
 @media (min-width: 500px) {
-  .explicacionnot {
-    background-color: brown;
-  }
-  .grilla {
-    display: grid;
-    grid-template-areas: "cabecera    cabecera" "deseo       deseo" "explicacion explicacion" "pie         pie";
-  }
-  .explicacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-  }
+  /*.grilla{
+      display: grid;
+      grid-template-areas:
+      "cabecera    cabecera"
+      "deseo       deseo"
+      "explicacion explicacion"
+      "pie         pie";
+  }*/
+  /*.explicacion{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+  }*/
   .grillatienda {
     display: grid;
     grid-template-areas: "cabecera           cabecera" "deseo              deseo" "explicaciontienda  explicaciontienda" "pie                pie";
@@ -265,20 +317,21 @@ img {
 }
 /*--------------------------------------------------*/
 @media (min-width: 768px) {
-  .explicacionnot {
-    background-color: coral;
-  }
-  .grilla {
-    display: grid;
-    grid-template-areas: "cabecera    cabecera    cabecera" "deseo       deseo       deseo" "explicacion explicacion explicacion" "pie         pie         pie";
-    /*gap: 20px;*/
-  }
-  .explicacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-  }
+  /*.grilla{
+      display: grid;
+      grid-template-areas:
+      "cabecera    cabecera    cabecera"
+      "deseo       deseo       deseo"
+      "explicacion explicacion explicacion"
+      "pie         pie         pie";
+      /*gap: 20px;
+  }*/
+  /*.explicacion{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+  }*/
   .grillatienda {
     display: grid;
     grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicaciontienda  explicaciontienda   explicaciontienda" "pie                pie                 pie";
@@ -313,27 +366,9 @@ img {
     border: none;
     margin-top: 5px;
   }
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  li {
-    display: inline-block;
-  }
-  a {
-    text-decoration: none;
-    /*color:black;*/
-    padding: 5px;
-  }
 }
 /*--------------------------------------------------*/
 @media (max-width: 850px) {
-  .explicacionnot {
-    background-color: darkgreen;
-  }
   .grillatiendat {
     display: grid;
     grid-template-areas: "cabecera           " "deseo              " "explicaciontiendat " "pie                ";
