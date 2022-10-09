@@ -1,0 +1,59 @@
+.explicacionfaqs{
+    grid-area: explicacionnosotros;
+}
+
+/*Defino la grilla de faqs.html*/
+.grillafaqs{
+    display: grid;
+    grid-template-rows: 1fr;
+    @include responsive(movile){
+        grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacionfaqs"
+        "pie";
+    }
+    @include responsive(tablet){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionfaqs        explicacionfaqs"
+        "pie                    pie";
+    }
+    @include responsive(desk){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionfaqs        explicacionfaqs"
+        "pie                    pie";
+        }
+        @include responsive(particular){
+            grid-template-areas:
+            "cabecera"
+            "deseo"
+            "explicacionfaqs"
+            "pie";
+        }
+}
+
+.explicacionfaqs{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    @include responsive(movile){
+        grid-template-columns: 1fr;
+    } 
+    @include responsive(tablet){
+        grid-template-columns: 1fr 1fr;
+    }   
+    @include responsive(desk){
+        grid-template-columns: 1fr 1fr;
+    } 
+    @include responsive(particular){
+        grid-template-columns: 1fr;
+    } 
+}
+.paquito{
+    width: auto;
+    height: auto;
+}

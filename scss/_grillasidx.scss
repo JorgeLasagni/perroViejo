@@ -1,10 +1,6 @@
-body{   
-        flex-direction: column;
-        display: flex;
-        min-height: 100vh;
-}
+
 /*--------------------------------------*/
-/*Declaración de áreas para la grilla*/
+/*Declaración de áreas para la grilla de index.html*/
 header{
     grid-area: cabecera;
 }
@@ -18,6 +14,7 @@ footer{
     grid-area: pie;
 }
 
+/*Defino la grilla de index.html*/
 .grilla{
     display: grid;
     @include responsive(movile){

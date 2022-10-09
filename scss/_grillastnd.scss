@@ -1,0 +1,50 @@
+/*--------------------------------------*/
+/*Declaración de áreas para la grilla de tienda.html*/
+/*Sólo los especiales para tienda.html*/
+
+.explicaciontienda{
+    grid-area: explicaciontienda;
+}
+
+/*Defino la grilla de tienda.html*/
+.grillatienda{
+    display: grid;
+    grid-template-rows: 1fr;
+    @include responsive(movile){
+        grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicaciontienda"
+        "pie";
+    }
+    @include responsive(tablet){
+        grid-template-areas:
+        "cabecera           cabecera"
+        "deseo              deseo"
+        "explicaciontienda  explicaciontienda"
+        "pie                pie";
+    }
+    @include responsive(desk){
+        grid-template-areas:
+        "cabecera           cabecera            cabecera"
+        "deseo              deseo               deseo"
+        "explicaciontienda  explicaciontienda   explicaciontienda"
+        "pie                pie                 pie";
+    }
+}
+
+.explicaciontienda{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    @include responsive(movile){
+        grid-template-columns: 1fr;
+    } 
+    @include responsive(tablet){
+        grid-template-columns: 1fr 1fr;
+    }   
+    @include responsive(desk){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}
+

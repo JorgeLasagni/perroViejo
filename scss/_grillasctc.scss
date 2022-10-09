@@ -1,0 +1,21 @@
+.explicacioncontacto{
+    grid-area: explicacioncontacto;
+}
+
+/*Defino la grilla de contacto.html*/
+.grillacontacto{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacioncontacto"
+        "pie";
+}
+.explicacionnoticias{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-columns: 1fr;
+} 

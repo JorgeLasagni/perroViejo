@@ -1,0 +1,21 @@
+.explicacionnoticias{
+    grid-area: explicacionnoticias;
+}
+
+/*Defino la grilla de noticias.html*/
+.grillanoticias{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacionnoticias"
+        "pie";
+}
+.explicacionnoticias{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-columns: 1fr;
+} 

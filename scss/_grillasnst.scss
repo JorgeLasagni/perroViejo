@@ -1,0 +1,45 @@
+.explicacionnosotros{
+    grid-area: explicacionnosotros;
+}
+
+/*Defino la grilla de nosotros.html*/
+.grillanosotros{
+    display: grid;
+    grid-template-rows: 1fr;
+    @include responsive(movile){
+        grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacionnosotros"
+        "pie";
+    }
+    @include responsive(tablet){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionnosotros    explicacionnosotros"
+        "pie                    pie";
+    }
+    @include responsive(desk){
+        grid-template-areas:
+        "cabecera               cabecera            cabecera"
+        "deseo                  deseo               deseo"
+        "explicacionnosotros    explicacionnosotros explicacionnosotros"
+        "pie                    pie                 pie";
+    }
+}
+
+.explicacionnosotros{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    @include responsive(movile){
+        grid-template-columns: 1fr;
+    } 
+    @include responsive(tablet){
+        grid-template-columns: 1fr 1fr;
+    }   
+    @include responsive(desk){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}
