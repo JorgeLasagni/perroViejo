@@ -1,6 +1,5 @@
 header{
     background-color: rgb(100, 114, 237);
-    /*padding: 3rem 0;*/
     nav{
         width: 100%;
         margin: 0 auto;
@@ -34,19 +33,15 @@ header{
         }
     }
 }
-
-.logoppal{
-    margin-top: 1.5px;
-    border: 1.5px;
-    border-style: double;
-    border-color:red;
-}
-
 .logo{
     margin-top: 1.5px;
     border: 1.5px;
     border-style: double;
     border-color: black;
+    &--ppal{
+        @extend .logo;
+        border-color: red;   
+    }
 }
 a.navPpal {
     color:red;

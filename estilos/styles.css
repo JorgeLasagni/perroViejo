@@ -37,8 +37,7 @@ section.explicacionnosotros p {
   margin: 10PX;
   padding: 15px;
   height: auto;
-  /*font-family: 'Poppins', sans-serif;*/
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   font-size: larger;
   font-weight: normal;
@@ -57,6 +56,8 @@ article h1 {
   border: 3px solid blue;
   background: rgb(86, 236, 234);
   background: linear-gradient(90deg, rgba(86, 236, 234, 0.9836309524) 1%, rgb(202, 230, 227) 14%, rgb(235, 246, 55) 25%, rgb(66, 172, 167) 40%, rgb(1, 236, 229) 57%, rgb(0, 42, 246) 75%, rgb(33, 148, 143) 86%, rgb(82, 255, 0) 100%);
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
 }
 
 .h1noticias h1 {
@@ -72,15 +73,15 @@ article h1 {
           margin-inline-end: 0px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 0px;
 }
 
-/*body{   
-    flex-direction: column;
-    display: flex;
-    min-height: 100vh;
-} */
+.grillanoticias header {
+  padding: 0.2px;
+  background-color: rgb(100, 114, 237);
+}
+
 .videito {
   display: block;
   width: 50%;
@@ -90,7 +91,6 @@ article h1 {
 
 header {
   background-color: rgb(100, 114, 237);
-  /*padding: 3rem 0;*/
 }
 header nav {
   width: 100%;
@@ -132,18 +132,14 @@ header nav ul li a {
   padding: 5px;
 }
 
-.logoppal {
-  margin-top: 1.5px;
-  border: 1.5px;
-  border-style: double;
-  border-color: red;
-}
-
-.logo {
+.logo, .logo--ppal {
   margin-top: 1.5px;
   border: 1.5px;
   border-style: double;
   border-color: black;
+}
+.logo--ppal {
+  border-color: red;
 }
 
 a.navPpal {
