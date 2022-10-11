@@ -23,6 +23,21 @@ section{
         margin-right: 4px;
         height: auto;
         font-family: 'Poppins', sans-serif;
-        justify-content: center;    
+        justify-content: center;  
+        font-weight: normal;  
+    }
+}
+section.explicacionnosotros{
+    p{
+        gap: 0px;
+        border: 3px double rgb(34, 2, 41);
+        margin: 10PX;
+        padding: 15px;
+        height: auto;
+        /*font-family: 'Poppins', sans-serif;*/
+        font-family: 'Poppins';
+        justify-content: center;
+        font-size: larger; 
+        font-weight: normal; 
     }
 }
