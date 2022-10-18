@@ -304,7 +304,7 @@ footer {
 }
 
 .explicacionfaqs {
-  grid-area: explicacionnosotros;
+  grid-area: explicacionfaqs;
 }
 
 /*Defino la grilla de faqs.html*/
@@ -325,6 +325,10 @@ footer {
 @media only screen and (min-width: 768px) {
   .grillafaqs {
     grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionfaqs        explicacionfaqs" "pie                    pie";
+    /*"cabecera           cabecera        cabecera"
+    "deseo              deseo           deseo"
+    "explicacionfaqs    explicacionfaqs explicacionfaqs"
+    "pie                pie             pie";*/
   }
 }
 @media only screen and (max-width: 850px) {
@@ -336,7 +340,14 @@ footer {
 .explicacionfaqs {
   display: grid;
   grid-template-rows: 1fr;
-  justify-items: center;
+  /*justify-items: center;*/
+  justify-items: baseline;
+  /*gap: 50px;*/
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 @media only screen and (max-width: 500px) {
   .explicacionfaqs {
@@ -357,11 +368,6 @@ footer {
   .explicacionfaqs {
     grid-template-columns: 1fr;
   }
-}
-
-.paquito {
-  width: auto;
-  height: auto;
 }
 
 .explicacioncontacto {
@@ -424,6 +430,10 @@ footer div a img {
     width: 40px;
     height: 40px;
   }
+}
+
+footer.bodyfaqs {
+  margin-top: 400px;
 }
 
 .box:hover {
@@ -571,6 +581,42 @@ figcaption {
 
 figure:hover figcaption {
   bottom: 0px;
+}
+
+/*-----------------DUDAS HTML --------------------------*/
+p.tooltip { /* Estilos del texto que tiene el tooltip */
+  position: relative;
+  z-index: 24;
+  cursor: help;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+p.tooltip:hover {
+  z-index: 25;
+  color: blue;
+  text-decoration: none;
+  /*border: 1px solid rgb(177, 14, 14);*/
+}
+
+p.tooltip span {
+  display: none;
+}
+
+p.tooltip:hover span { /* Estilos de la descripción */
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  width: 130%;
+  /*width: 100%;*/
+  /*scrollbar-width: 150%;*/
+  /*max-width: 100vmax;*/
+  border: 5px solid rgb(25, 0, 255);
+  /*background-image: url(../imagenes/duda.jpg);*/
+  background-color: pink;
+  color: #000;
+  text-align: left;
 }
 
 /*Fin del SCSS--------------------------------*//*# sourceMappingURL=styles.css.map */

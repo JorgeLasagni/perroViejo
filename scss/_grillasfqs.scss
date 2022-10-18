@@ -1,5 +1,5 @@
 .explicacionfaqs{
-    grid-area: explicacionnosotros;
+    grid-area: explicacionfaqs;
 }
 
 /*Defino la grilla de faqs.html*/
@@ -26,6 +26,10 @@
         "deseo                  deseo"
         "explicacionfaqs        explicacionfaqs"
         "pie                    pie";
+        /*"cabecera           cabecera        cabecera"
+        "deseo              deseo           deseo"
+        "explicacionfaqs    explicacionfaqs explicacionfaqs"
+        "pie                pie             pie";*/
         }
         @include responsive(particular){
             grid-template-areas:
@@ -39,7 +43,13 @@
 .explicacionfaqs{
     display: grid;
     grid-template-rows: 1fr;
-    justify-items: center;
+    /*justify-items: center;*/
+    justify-items: baseline;
+    /*gap: 50px;*/
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
     @include responsive(movile){
         grid-template-columns: 1fr;
     } 
@@ -52,8 +62,4 @@
     @include responsive(particular){
         grid-template-columns: 1fr;
     } 
-}
-.paquito{
-    width: auto;
-    height: auto;
 }
