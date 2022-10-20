@@ -1,11 +1,11 @@
+/*Defino las características generales*/
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: rgb(212, 90, 206);
-    
+    background-color: rgb(212, 90, 206); 
 }
 
 article{
@@ -36,11 +36,12 @@ article{
         padding: 0.2px;
         background-color: rgb(100, 114, 237);
     }
-
 }
+
 .videito{
     display:block; 
     width:50%;
+    /*height: 50%;*/
     margin-left: 25%;
     margin-right: 30%;
 }

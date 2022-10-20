@@ -1,12 +1,7 @@
-/*--------------------------------------*/
-/*Declaración de áreas para la grilla de tienda.html*/
-/*Sólo los especiales para tienda.html*/
-
+/*Defino la grilla de tienda.html*/
 .explicaciontienda{
     grid-area: explicaciontienda;
 }
-
-/*Defino la grilla de tienda.html*/
 .grillatienda{
     display: grid;
     grid-template-rows: 1fr;
@@ -46,4 +41,7 @@
     @include responsive(desk){
         grid-template-columns: 1fr 1fr 1fr;
     } 
+    img.boxt{
+        margin-top: 5px;
+    }   
 }

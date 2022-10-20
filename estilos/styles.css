@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*SCSS*/ /*Defino las fuentes que utilizo en los html´s*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
 html {
   font-size: 90%;
@@ -43,6 +44,7 @@ section.explicacionnosotros p {
   font-weight: normal;
 }
 
+/*Defino las características generales*/
 * {
   margin: 0;
   padding: 0;
@@ -85,10 +87,12 @@ article h1 {
 .videito {
   display: block;
   width: 50%;
+  /*height: 50%;*/
   margin-left: 25%;
   margin-right: 30%;
 }
 
+/*Defino las mediasquery que voy a utilizar luego*/ /*Defino las características generales de la cabecera de los html´s*/
 header {
   background-color: rgb(100, 114, 237);
 }
@@ -149,7 +153,6 @@ a.navPpal {
   font-weight: bold;
 }
 
-/*--------------------------------------*/
 /*Declaración de áreas para la grilla de index.html*/
 header {
   grid-area: cabecera;
@@ -191,6 +194,8 @@ footer {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 @media only screen and (max-width: 500px) {
   .explicacion {
@@ -207,15 +212,15 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.explicacion img {
+  margin-top: 10px;
+}
 
-/*--------------------------------------*/
-/*Declaración de áreas para la grilla de tienda.html*/
-/*Sólo los especiales para tienda.html*/
+/*Defino la grilla de tienda.html*/
 .explicaciontienda {
   grid-area: explicaciontienda;
 }
 
-/*Defino la grilla de tienda.html*/
 .grillatienda {
   display: grid;
   grid-template-rows: 1fr;
@@ -256,12 +261,15 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.explicaciontienda img.boxt {
+  margin-top: 5px;
+}
 
+/*Defino la grilla de nosotros.html*/
 .explicacionnosotros {
   grid-area: explicacionnosotros;
 }
 
-/*Defino la grilla de nosotros.html*/
 .grillanosotros {
   display: grid;
   grid-template-rows: 1fr;
@@ -303,78 +311,69 @@ footer {
   }
 }
 
-.explicacionfaqs {
-  grid-area: explicacionfaqs;
-}
-
 /*Defino la grilla de faqs.html*/
-.grillafaqs {
-  display: grid;
-  grid-template-rows: 1fr;
+/*.explicacionfaqs{
+    grid-area: explicacionfaqs;
 }
-@media only screen and (max-width: 500px) {
-  .grillafaqs {
-    grid-template-areas: "cabecera" "deseo" "explicacionfaqs" "pie";
-  }
+.grillafaqs{
+    display: grid;
+    grid-template-rows: 1fr;
+    @include responsive(movile){
+        grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacionfaqs1"
+        "explicacionfaqs2"
+        "explicacionfaqs3"
+        "explicacionfaqs4"
+        "pie";
+    }
+    @include responsive(tablet){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionfaqs        explicacionfaqs"
+        "pie                    pie";
+    }
+    @include responsive(desk){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionfaqs        explicacionfaqs"
+        "pie                    pie";
+        }
+    @include responsive(particular){
+            grid-template-areas:
+            "cabecera"
+            "deseo"
+            "explicacionfaqs"
+            "pie";
+        }
 }
-@media only screen and (min-width: 500px) {
-  .grillafaqs {
-    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionfaqs        explicacionfaqs" "pie                    pie";
-  }
-}
-@media only screen and (min-width: 768px) {
-  .grillafaqs {
-    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionfaqs        explicacionfaqs" "pie                    pie";
-    /*"cabecera           cabecera        cabecera"
-    "deseo              deseo           deseo"
-    "explicacionfaqs    explicacionfaqs explicacionfaqs"
-    "pie                pie             pie";*/
-  }
-}
-@media only screen and (max-width: 850px) {
-  .grillafaqs {
-    grid-template-areas: "cabecera" "deseo" "explicacionfaqs" "pie";
-  }
-}
-
-.explicacionfaqs {
-  display: grid;
-  grid-template-rows: 1fr;
-  /*justify-items: center;*/
-  justify-items: baseline;
-  /*gap: 50px;*/
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: 10px;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-@media only screen and (max-width: 500px) {
-  .explicacionfaqs {
-    grid-template-columns: 1fr;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .explicacionfaqs {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .explicacionfaqs {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .explicacionfaqs {
-    grid-template-columns: 1fr;
-  }
-}
-
+.explicacionfaqs{
+    display: grid;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    @include responsive(movile){
+        grid-template-columns: 1fr;
+    } 
+    @include responsive(tablet){
+        grid-template-columns: 1fr 1fr;
+    }   
+    @include responsive(desk){
+        grid-template-columns: 1fr 1fr;
+    } 
+    @include responsive(particular){
+        grid-template-columns: 1fr;
+    } 
+}*/
+/*Defino la grilla de contacto.html*/
 .explicacioncontacto {
   grid-area: explicacioncontacto;
 }
 
-/*Defino la grilla de contacto.html*/
 .grillacontacto {
   display: grid;
   grid-template-rows: 1fr;
@@ -398,9 +397,11 @@ footer {
   margin-bottom: 50px;
 }
 
+/*Características generales del footer*/
 footer {
   margin-top: 10px;
-  border: double rgb(255, 0, 0);
+  /*border: double rgb(255, 0, 0);*/
+  border: rgb(42, 63, 110);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -432,10 +433,8 @@ footer div a img {
   }
 }
 
-footer.bodyfaqs {
-  margin-top: 400px;
-}
-
+/*Defino las animaciones que uso en los html´s*/
+/*para index.html*/
 .box:hover {
   transform: scale(1.5);
   transition: all 2s ease;
@@ -556,6 +555,7 @@ footer.bodyfaqs {
     transform: translate(20px, 0px);
   }
 }
+/*para tienda.html*/
 .boxt:hover {
   transform: scale(1.1);
   transition: all 2s ease;
@@ -583,20 +583,21 @@ figure:hover figcaption {
   bottom: 0px;
 }
 
-/*-----------------faqs.html-------------------------------------------*/
-p.tooltip { /* Estilos del texto que tiene el tooltip */
+/*para faqs.html*/
+/* Estilos del texto tooltip */
+p.tooltip {
   position: relative;
   z-index: 24;
   cursor: help;
   text-decoration: underline;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 p.tooltip:hover {
   z-index: 25;
   color: blue;
   text-decoration: none;
-  /*border: 1px solid rgb(177, 14, 14);*/
 }
 
 p.tooltip span {

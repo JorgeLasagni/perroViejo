@@ -1,8 +1,7 @@
-.explicacionfaqs{
+/*Defino la grilla de faqs.html*/
+/*.explicacionfaqs{
     grid-area: explicacionfaqs;
 }
-
-/*Defino la grilla de faqs.html*/
 .grillafaqs{
     display: grid;
     grid-template-rows: 1fr;
@@ -10,7 +9,10 @@
         grid-template-areas:
         "cabecera"
         "deseo"
-        "explicacionfaqs"
+        "explicacionfaqs1"
+        "explicacionfaqs2"
+        "explicacionfaqs3"
+        "explicacionfaqs4"
         "pie";
     }
     @include responsive(tablet){
@@ -26,12 +28,8 @@
         "deseo                  deseo"
         "explicacionfaqs        explicacionfaqs"
         "pie                    pie";
-        /*"cabecera           cabecera        cabecera"
-        "deseo              deseo           deseo"
-        "explicacionfaqs    explicacionfaqs explicacionfaqs"
-        "pie                pie             pie";*/
         }
-        @include responsive(particular){
+    @include responsive(particular){
             grid-template-areas:
             "cabecera"
             "deseo"
@@ -39,17 +37,12 @@
             "pie";
         }
 }
-
 .explicacionfaqs{
     display: grid;
     grid-template-rows: 1fr;
-    /*justify-items: center;*/
-    justify-items: baseline;
-    /*gap: 50px;*/
     column-gap: 10px;
     row-gap: 10px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 10px;
     @include responsive(movile){
         grid-template-columns: 1fr;
     } 
@@ -62,4 +55,4 @@
     @include responsive(particular){
         grid-template-columns: 1fr;
     } 
-}
+}*/
