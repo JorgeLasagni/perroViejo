@@ -69,7 +69,7 @@ figcaption{
 figure:hover figcaption{
     bottom: 0px;
 }
-/*-----------------DUDAS HTML --------------------------*/
+/*-----------------faqs.html-------------------------------------------*/
 p.tooltip { /* Estilos del texto que tiene el tooltip */
     position: relative;
     z-index: 24;
@@ -87,17 +87,14 @@ p.tooltip:hover{
 p.tooltip span {
     display: none
 }
-p.tooltip:hover span { /* Estilos de la descripción */
+/* Estilos de la descripción */
+p.tooltip:hover span { 
     display: block;
     position: absolute;
     top: 2em;
     left: 2em;
     width: 130%;
-    /*width: 100%;*/
-    /*scrollbar-width: 150%;*/
-    /*max-width: 100vmax;*/
     border: 5px solid rgb(25, 0, 255);
-    /*background-image: url(../imagenes/duda.jpg);*/
     background-color: pink ;
     color: #000;
     text-align: left;
