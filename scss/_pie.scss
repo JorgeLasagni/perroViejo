@@ -1,7 +1,6 @@
 /*Características generales del footer*/
 footer{
     margin-top: 10px;
-    /*border: double rgb(255, 0, 0);*/
     border: rgb(42, 63, 110); 
     display: flex;
     flex-direction: row;
@@ -19,11 +18,18 @@ footer{
                     width:  30px;
                     height: 30px;
                 }
-                @include responsive(tablet) {
+                @include responsive(tabletv) {
+                    width:  40px;
+                    height: 40px;
+                }
+                @include responsive(tableth) {
                     width:  40px;
                     height: 40px;
                 }
                 @include responsive(desk) {
+                    width:  40px;
+                    height: 40px;
+                }@include responsive(deskxl) {
                     width:  40px;
                     height: 40px;
                 }

@@ -62,6 +62,7 @@ article h1 {
   font-weight: normal;
 }
 
+/*Ajustes por destorsión BootStrap*/
 .h1noticias h1 {
   font-size: 1.5em;
   -webkit-margin-before: 0.83em;
@@ -83,16 +84,14 @@ article h1 {
   padding: 0.2px;
   background-color: rgb(100, 114, 237);
 }
-.grillanoticias body {
-  background-color: rgb(237, 100, 100);
-}
 
 .videito {
   display: block;
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
   margin-left: 35%;
   margin-right: 35%;
+  border: double blue 5px;
 }
 
 /*Defino las mediasquery que voy a utilizar luego*/ /*Defino las características generales de la cabecera de los html´s*/
@@ -338,7 +337,6 @@ footer {
 
 .explicacionnoticias {
   display: grid;
-  /*justify-items: center;*/
   grid-template-rows: 1fr;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -435,7 +433,13 @@ footer {
   }
 }
 
-/*Defino la grilla de faqs.html*/ /*Defino la grilla de contacto.html*/
+/*Defino la grilla de faqs.html*/
+.accordion-body {
+  font-weight: normal;
+  font-size: medium;
+}
+
+/*Defino la grilla de contacto.html*/
 .explicacioncontacto {
   grid-area: explicacioncontacto;
 }
@@ -456,17 +460,24 @@ footer {
 
 /*Formulario de Contacto*/
 .iniform {
-  margin-top: 50px;
+  margin-top: 25px;
+  font-weight: normal;
+  font-size: large;
 }
 
 .finform {
   margin-bottom: 50px;
 }
 
+div.row {
+  padding: 5px;
+  margin: 5px;
+  font-weight: normal;
+}
+
 /*Características generales del footer*/
 footer {
   margin-top: 10px;
-  /*border: double rgb(255, 0, 0);*/
   border: rgb(42, 63, 110);
   display: flex;
   flex-direction: row;
@@ -486,7 +497,25 @@ footer div a img {
     height: 30px;
   }
 }
+@media only screen and (min-width: 576px) {
+  footer div a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer div a img {
+    width: 40px;
+    height: 40px;
+  }
+}
 @media only screen and (min-width: 992px) {
+  footer div a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
   footer div a img {
     width: 40px;
     height: 40px;

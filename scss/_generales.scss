@@ -15,6 +15,7 @@ article{
         font-weight: normal;
     }
 }
+/*Ajustes por destorsión BootStrap*/
 .h1noticias{
     h1{
         font-size: 1.5em;
@@ -34,15 +35,12 @@ article{
         padding: 0.2px;
         background-color: rgb(100, 114, 237);
     }
-    body{
-        background-color: rgb(237, 100, 100);
- 
-    }
 }
 .videito{
     display:block; 
-    width:30%;
-    height: 30%;
+    width:50%;
+    height: 50%;
     margin-left: 35%;
     margin-right: 35%;
+    border: double blue 5px;
 }
