@@ -1,26 +1,56 @@
 /*Defino la grilla de noticias.html*/
+header{
+    grid-area: cabecera;
+}
+h1{
+    grid-area: deseo;
+}
 .explicacionnoticias{
     grid-area: explicacionnoticias;
 }
+footer{
+    grid-area: pie;
+}
 .grillanoticias{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-areas:
+    @include responsive(movile){
+        grid-template-areas:
         "cabecera"
         "deseo"
         "explicacionnoticias"
         "pie";
+    }
+    @include responsive(tablet){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionnoticias    explicacionnoticias"
+        "pie                    pie";
+    }
+    @include responsive(desk){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionnoticias    explicacionnoticias"
+        "pie                    pie";
+    }
 }
-.explicacionnoticias{
-    width: 100%;
+.explicacionnoticioas{
     display: grid;
-    grid-template-rows: 1fr;
     justify-items: center;
-    grid-template-columns: 1fr;
-} 
-/*.videito{
-    display:block; 
-    width:50%;
-    margin-left: 25%;
-    margin-right: 30%;
-}*/
+    grid-template-rows: 1fr;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    @include responsive(movile){
+        grid-template-columns: 1fr;
+    } 
+    @include responsive(tablet){
+        grid-template-columns: 1fr 1fr;
+    }   
+    @include responsive(desk){
+        grid-template-columns: 1fr 1fr;
+    } 
+    /*img{
+        margin-top: 10px;
+    }*/
+}

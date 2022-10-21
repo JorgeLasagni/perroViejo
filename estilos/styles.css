@@ -83,13 +83,16 @@ article h1 {
   padding: 0.2px;
   background-color: rgb(100, 114, 237);
 }
+.grillanoticias body {
+  background-color: rgb(237, 100, 100);
+}
 
 .videito {
   display: block;
-  width: 50%;
-  /*height: 50%;*/
-  margin-left: 25%;
-  margin-right: 30%;
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 /*Defino las mediasquery que voy a utilizar luego*/ /*Defino las características generales de la cabecera de los html´s*/
@@ -265,6 +268,68 @@ footer {
   margin-top: 5px;
 }
 
+/*Defino la grilla de noticias.html*/
+header {
+  grid-area: cabecera;
+}
+
+h1 {
+  grid-area: deseo;
+}
+
+.explicacionnoticias {
+  grid-area: explicacionnoticias;
+}
+
+footer {
+  grid-area: pie;
+}
+
+.grillanoticias {
+  display: grid;
+}
+@media only screen and (max-width: 500px) {
+  .grillanoticias {
+    grid-template-areas: "cabecera" "deseo" "explicacionnoticias" "pie";
+  }
+}
+@media only screen and (min-width: 500px) {
+  .grillanoticias {
+    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionnoticias    explicacionnoticias" "pie                    pie";
+  }
+}
+@media only screen and (min-width: 768px) {
+  .grillanoticias {
+    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionnoticias    explicacionnoticias" "pie                    pie";
+  }
+}
+
+.explicacionnoticioas {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*img{
+      margin-top: 10px;
+  }*/
+}
+@media only screen and (max-width: 500px) {
+  .explicacionnoticioas {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .explicacionnoticioas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .explicacionnoticioas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /*Defino la grilla de nosotros.html*/
 .explicacionnosotros {
   grid-area: explicacionnosotros;
@@ -380,7 +445,7 @@ footer {
   grid-template-areas: "cabecera" "deseo" "explicacioncontacto" "pie";
 }
 
-.explicacionnoticias {
+.explicacioncontacto {
   width: 100%;
   display: grid;
   grid-template-rows: 1fr;
