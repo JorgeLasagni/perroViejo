@@ -12,13 +12,20 @@
         "explicacionnosotros"
         "pie";
     }
-    @include responsive(tablet){
+    @include responsive(tabletv){
         grid-template-areas:
         "cabecera               cabecera"
         "deseo                  deseo"
         "explicacionnosotros    explicacionnosotros"
         "pie                    pie";
     }
+    @include responsive(tableth){
+        grid-template-areas:
+        "cabecera               cabecera            cabecera"
+        "deseo                  deseo               deseo"
+        "explicacionnosotros    explicacionnosotros explicacionnosotros"
+        "pie                    pie                 pie";
+    }    
     @include responsive(desk){
         grid-template-areas:
         "cabecera               cabecera            cabecera"
@@ -26,6 +33,14 @@
         "explicacionnosotros    explicacionnosotros explicacionnosotros"
         "pie                    pie                 pie";
     }
+    @include responsive(deskxl){
+        grid-template-areas:
+        "cabecera               cabecera            cabecera"
+        "deseo                  deseo               deseo"
+        "explicacionnosotros    explicacionnosotros explicacionnosotros"
+        "pie                    pie                 pie";
+    }
+
 }
 
 .explicacionnosotros{
@@ -35,10 +50,17 @@
     @include responsive(movile){
         grid-template-columns: 1fr;
     } 
-    @include responsive(tablet){
+    @include responsive(tabletv){
         grid-template-columns: 1fr 1fr;
     }   
+    @include responsive(tableth){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
     @include responsive(desk){
         grid-template-columns: 1fr 1fr 1fr;
     } 
+    @include responsive(deskxl){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+
 }

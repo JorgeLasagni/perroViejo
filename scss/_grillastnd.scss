@@ -12,14 +12,28 @@
         "explicaciontienda"
         "pie";
     }
-    @include responsive(tablet){
+    @include responsive(tabletv){
         grid-template-areas:
         "cabecera           cabecera"
         "deseo              deseo"
         "explicaciontienda  explicaciontienda"
         "pie                pie";
     }
+    @include responsive(tableth){
+        grid-template-areas:
+        "cabecera           cabecera            cabecera"
+        "deseo              deseo               deseo"
+        "explicaciontienda  explicaciontienda   explicaciontienda"
+        "pie                pie                 pie";
+    }
     @include responsive(desk){
+        grid-template-areas:
+        "cabecera           cabecera            cabecera"
+        "deseo              deseo               deseo"
+        "explicaciontienda  explicaciontienda   explicaciontienda"
+        "pie                pie                 pie";
+    }
+    @include responsive(deskxl){
         grid-template-areas:
         "cabecera           cabecera            cabecera"
         "deseo              deseo               deseo"
@@ -35,10 +49,16 @@
     @include responsive(movile){
         grid-template-columns: 1fr;
     } 
-    @include responsive(tablet){
+    @include responsive(tabletv){
         grid-template-columns: 1fr 1fr;
     }   
+    @include responsive(tableth){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
     @include responsive(desk){
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+    @include responsive(deskxl){
         grid-template-columns: 1fr 1fr 1fr;
     } 
     img.boxt{

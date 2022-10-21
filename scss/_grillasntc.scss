@@ -1,15 +1,9 @@
 /*Defino la grilla de noticias.html*/
-header{
-    grid-area: cabecera;
-}
-h1{
+.h1noticias{
     grid-area: deseo;
 }
 .explicacionnoticias{
     grid-area: explicacionnoticias;
-}
-footer{
-    grid-area: pie;
 }
 .grillanoticias{
     display: grid;
@@ -20,7 +14,14 @@ footer{
         "explicacionnoticias"
         "pie";
     }
-    @include responsive(tablet){
+    @include responsive(tabletv){
+        grid-template-areas:
+        "cabecera"
+        "deseo"
+        "explicacionnoticias"
+        "pie";
+    }
+    @include responsive(tableth){
         grid-template-areas:
         "cabecera               cabecera"
         "deseo                  deseo"
@@ -28,6 +29,12 @@ footer{
         "pie                    pie";
     }
     @include responsive(desk){
+        grid-template-areas:
+        "cabecera               cabecera"
+        "deseo                  deseo"
+        "explicacionnoticias    explicacionnoticias"
+        "pie                    pie";
+    }    @include responsive(deskxl){
         grid-template-areas:
         "cabecera               cabecera"
         "deseo                  deseo"
@@ -35,22 +42,25 @@ footer{
         "pie                    pie";
     }
 }
-.explicacionnoticioas{
+.explicacionnoticias{
     display: grid;
-    justify-items: center;
+    /*justify-items: center;*/
     grid-template-rows: 1fr;
     margin-top: 5px;
     margin-bottom: 5px;
     @include responsive(movile){
         grid-template-columns: 1fr;
     } 
-    @include responsive(tablet){
-        grid-template-columns: 1fr 1fr;
+    @include responsive(tabletv){
+        grid-template-columns: 1fr;
     }   
+    @include responsive(tableth){
+        grid-template-columns: 1fr 1fr;
+    } 
     @include responsive(desk){
         grid-template-columns: 1fr 1fr;
     } 
-    /*img{
-        margin-top: 10px;
-    }*/
+    @include responsive(deskxl){
+        grid-template-columns: 1fr 1fr;
+    } 
 }
