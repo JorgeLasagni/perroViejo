@@ -10,21 +10,24 @@ header{
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            padding-left: 0em;
             @include responsive(movile) {
                 flex-direction: column;
             }
-            @include responsive(tablet) {
+            @include responsive(tableth) {
                 flex-direction: column;
+            }
+            @include responsive(tableth) {
+                flex-direction: row;
             }
             @include responsive(desk) {
                 flex-direction: row;
             }
-            @include responsive(particular) {
-                flex-direction: column;
+            @include responsive(deskxl) {
+                flex-direction: row;
             }
             li{
                 display: inline-block;
-
                 a{
                     text-decoration:none;
                     color:black;
@@ -49,4 +52,4 @@ a.navPpal {
     background-color:rgb(0, 255, 242);
     font-style: oblique;
     font-weight: bold;
-}  
+}

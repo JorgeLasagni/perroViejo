@@ -1,47 +1,47 @@
 /*Defino la grilla de nosotros.html*/
-.explicacionnosotros{
-    grid-area: explicacionnosotros;
+.explicacionNosotros{
+    grid-area: explicacionNosotros;
 }
-.grillanosotros{
+.grillaNosotros{
     display: grid;
     grid-template-rows: 1fr;
     @include responsive(movile){
         grid-template-areas:
         "cabecera"
         "deseo"
-        "explicacionnosotros"
+        "explicacionNosotros"
         "pie";
     }
     @include responsive(tabletv){
         grid-template-areas:
         "cabecera               cabecera"
         "deseo                  deseo"
-        "explicacionnosotros    explicacionnosotros"
+        "explicacionNosotros    explicacionNosotros"
         "pie                    pie";
     }
     @include responsive(tableth){
         grid-template-areas:
         "cabecera               cabecera            cabecera"
         "deseo                  deseo               deseo"
-        "explicacionnosotros    explicacionnosotros explicacionnosotros"
+        "explicacionNosotros    explicacionNosotros explicacionNosotros"
         "pie                    pie                 pie";
     }    
     @include responsive(desk){
         grid-template-areas:
         "cabecera               cabecera            cabecera"
         "deseo                  deseo               deseo"
-        "explicacionnosotros    explicacionnosotros explicacionnosotros"
+        "explicacionNosotros    explicacionNosotros explicacionNosotros"
         "pie                    pie                 pie";
     }
     @include responsive(deskxl){
         grid-template-areas:
         "cabecera               cabecera            cabecera"
         "deseo                  deseo               deseo"
-        "explicacionnosotros    explicacionnosotros explicacionnosotros"
+        "explicacionNosotros    explicacionNosotros explicacionNosotros"
         "pie                    pie                 pie";
     }
 }
-.explicacionnosotros{
+.explicacionNosotros{
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;

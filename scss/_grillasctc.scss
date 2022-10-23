@@ -1,17 +1,17 @@
 /*Defino la grilla de contacto.html*/
-.explicacioncontacto{
-    grid-area: explicacioncontacto;
+.explicacionContacto{
+    grid-area: explicacionContacto;
 }
-.grillacontacto{
+.grillaContacto{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-areas:
         "cabecera"
         "deseo"
-        "explicacioncontacto"
+        "explicacionContacto"
         "pie";
 }
-.explicacioncontacto{
+.explicacionContacto{
     width: 100%;
     display: grid;
     grid-template-rows: 1fr;

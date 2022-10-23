@@ -16,7 +16,7 @@ article{
     }
 }
 /*Ajustes por destorsión BootStrap*/
-.h1noticias{
+.h1Noticias{
     h1{
         font-size: 1.5em;
         margin-block-start: 0.83em;
@@ -28,14 +28,9 @@ article{
         font-family: "Poppins", sans-serif;
         font-weight: normal;
         margin-top: 0px;
+        margin-bottom: 5px;
     }
 } 
-.grillanoticias{
-    header{
-        padding: 0.2px;
-        background-color: rgb(100, 114, 237);
-    }
-}
 .videito{
     display:block; 
     width:50%;

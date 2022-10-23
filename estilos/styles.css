@@ -32,7 +32,7 @@ section p {
   font-weight: normal;
 }
 
-section.explicacionnosotros p {
+section.explicacionNosotros p {
   gap: 0px;
   border: 3px double rgb(34, 2, 41);
   margin: 10PX;
@@ -63,7 +63,7 @@ article h1 {
 }
 
 /*Ajustes por destorsión BootStrap*/
-.h1noticias h1 {
+.h1Noticias h1 {
   font-size: 1.5em;
   -webkit-margin-before: 0.83em;
           margin-block-start: 0.83em;
@@ -78,11 +78,7 @@ article h1 {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   margin-top: 0px;
-}
-
-.grillanoticias header {
-  padding: 0.2px;
-  background-color: rgb(100, 114, 237);
+  margin-bottom: 5px;
 }
 
 .videito {
@@ -108,13 +104,29 @@ header nav ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-left: 0em;
 }
 @media only screen and (max-width: 576px) {
   header nav ul {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header nav ul {
+    flex-direction: row;
+  }
+}
 @media only screen and (min-width: 992px) {
+  header nav ul {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
   header nav ul {
     flex-direction: row;
   }
@@ -229,206 +241,206 @@ footer {
 }
 
 /*Defino la grilla de tienda.html*/
-.explicaciontienda {
-  grid-area: explicaciontienda;
+.explicacionTienda {
+  grid-area: explicacionTienda;
 }
 
-.grillatienda {
+.grillaTienda {
   display: grid;
   grid-template-rows: 1fr;
 }
 @media only screen and (max-width: 576px) {
-  .grillatienda {
-    grid-template-areas: "cabecera" "deseo" "explicaciontienda" "pie";
+  .grillaTienda {
+    grid-template-areas: "cabecera" "deseo" "explicacionTienda" "pie";
   }
 }
 @media only screen and (min-width: 576px) {
-  .grillatienda {
-    grid-template-areas: "cabecera           cabecera" "deseo              deseo" "explicaciontienda  explicaciontienda" "pie                pie";
+  .grillaTienda {
+    grid-template-areas: "cabecera           cabecera" "deseo              deseo" "explicacionTienda  explicacionTienda" "pie                pie";
   }
 }
 @media only screen and (min-width: 768px) {
-  .grillatienda {
-    grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicaciontienda  explicaciontienda   explicaciontienda" "pie                pie                 pie";
+  .grillaTienda {
+    grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicacionTienda  explicacionTienda   explicacionTienda" "pie                pie                 pie";
   }
 }
 @media only screen and (min-width: 992px) {
-  .grillatienda {
-    grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicaciontienda  explicaciontienda   explicaciontienda" "pie                pie                 pie";
+  .grillaTienda {
+    grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicacionTienda  explicacionTienda   explicacionTienda" "pie                pie                 pie";
   }
 }
 @media only screen and (min-width: 1200px) {
-  .grillatienda {
-    grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicaciontienda  explicaciontienda   explicaciontienda" "pie                pie                 pie";
+  .grillaTienda {
+    grid-template-areas: "cabecera           cabecera            cabecera" "deseo              deseo               deseo" "explicacionTienda  explicacionTienda   explicacionTienda" "pie                pie                 pie";
   }
 }
 
-.explicaciontienda {
+.explicacionTienda {
   display: grid;
   grid-template-rows: 1fr;
   justify-items: center;
 }
 @media only screen and (max-width: 576px) {
-  .explicaciontienda {
+  .explicacionTienda {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 576px) {
-  .explicaciontienda {
+  .explicacionTienda {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 768px) {
-  .explicaciontienda {
+  .explicacionTienda {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 992px) {
-  .explicaciontienda {
+  .explicacionTienda {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .explicaciontienda {
+  .explicacionTienda {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.explicaciontienda img.boxt {
+.explicacionTienda img.boxt {
   margin-top: 5px;
 }
 
 /*Defino la grilla de noticias.html*/
-.h1noticias {
+.h1Noticias {
   grid-area: deseo;
 }
 
-.explicacionnoticias {
-  grid-area: explicacionnoticias;
+.explicacionNoticias {
+  grid-area: explicacionNoticias;
 }
 
-.grillanoticias {
+.grillaNoticias {
   display: grid;
 }
 @media only screen and (max-width: 576px) {
-  .grillanoticias {
-    grid-template-areas: "cabecera" "deseo" "explicacionnoticias" "pie";
+  .grillaNoticias {
+    grid-template-areas: "cabecera" "deseo" "explicacionNoticias" "pie";
   }
 }
 @media only screen and (min-width: 576px) {
-  .grillanoticias {
-    grid-template-areas: "cabecera" "deseo" "explicacionnoticias" "pie";
+  .grillaNoticias {
+    grid-template-areas: "cabecera" "deseo" "explicacionNoticias" "pie";
   }
 }
 @media only screen and (min-width: 768px) {
-  .grillanoticias {
-    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionnoticias    explicacionnoticias" "pie                    pie";
+  .grillaNoticias {
+    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionNoticias    explicacionNoticias" "pie                    pie";
   }
 }
 @media only screen and (min-width: 992px) {
-  .grillanoticias {
-    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionnoticias    explicacionnoticias" "pie                    pie";
+  .grillaNoticias {
+    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionNoticias    explicacionNoticias" "pie                    pie";
   }
 }
 @media only screen and (min-width: 1200px) {
-  .grillanoticias {
-    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionnoticias    explicacionnoticias" "pie                    pie";
+  .grillaNoticias {
+    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionNoticias    explicacionNoticias" "pie                    pie";
   }
 }
 
-.explicacionnoticias {
+.explicacionNoticias {
   display: grid;
   grid-template-rows: 1fr;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 576px) {
-  .explicacionnoticias {
+  .explicacionNoticias {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 576px) {
-  .explicacionnoticias {
+  .explicacionNoticias {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 768px) {
-  .explicacionnoticias {
+  .explicacionNoticias {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 992px) {
-  .explicacionnoticias {
+  .explicacionNoticias {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .explicacionnoticias {
+  .explicacionNoticias {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 /*Defino la grilla de nosotros.html*/
-.explicacionnosotros {
-  grid-area: explicacionnosotros;
+.explicacionNosotros {
+  grid-area: explicacionNosotros;
 }
 
-.grillanosotros {
+.grillaNosotros {
   display: grid;
   grid-template-rows: 1fr;
 }
 @media only screen and (max-width: 576px) {
-  .grillanosotros {
-    grid-template-areas: "cabecera" "deseo" "explicacionnosotros" "pie";
+  .grillaNosotros {
+    grid-template-areas: "cabecera" "deseo" "explicacionNosotros" "pie";
   }
 }
 @media only screen and (min-width: 576px) {
-  .grillanosotros {
-    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionnosotros    explicacionnosotros" "pie                    pie";
+  .grillaNosotros {
+    grid-template-areas: "cabecera               cabecera" "deseo                  deseo" "explicacionNosotros    explicacionNosotros" "pie                    pie";
   }
 }
 @media only screen and (min-width: 768px) {
-  .grillanosotros {
-    grid-template-areas: "cabecera               cabecera            cabecera" "deseo                  deseo               deseo" "explicacionnosotros    explicacionnosotros explicacionnosotros" "pie                    pie                 pie";
+  .grillaNosotros {
+    grid-template-areas: "cabecera               cabecera            cabecera" "deseo                  deseo               deseo" "explicacionNosotros    explicacionNosotros explicacionNosotros" "pie                    pie                 pie";
   }
 }
 @media only screen and (min-width: 992px) {
-  .grillanosotros {
-    grid-template-areas: "cabecera               cabecera            cabecera" "deseo                  deseo               deseo" "explicacionnosotros    explicacionnosotros explicacionnosotros" "pie                    pie                 pie";
+  .grillaNosotros {
+    grid-template-areas: "cabecera               cabecera            cabecera" "deseo                  deseo               deseo" "explicacionNosotros    explicacionNosotros explicacionNosotros" "pie                    pie                 pie";
   }
 }
 @media only screen and (min-width: 1200px) {
-  .grillanosotros {
-    grid-template-areas: "cabecera               cabecera            cabecera" "deseo                  deseo               deseo" "explicacionnosotros    explicacionnosotros explicacionnosotros" "pie                    pie                 pie";
+  .grillaNosotros {
+    grid-template-areas: "cabecera               cabecera            cabecera" "deseo                  deseo               deseo" "explicacionNosotros    explicacionNosotros explicacionNosotros" "pie                    pie                 pie";
   }
 }
 
-.explicacionnosotros {
+.explicacionNosotros {
   display: grid;
   grid-template-rows: 1fr;
   justify-items: center;
 }
 @media only screen and (max-width: 576px) {
-  .explicacionnosotros {
+  .explicacionNosotros {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 576px) {
-  .explicacionnosotros {
+  .explicacionNosotros {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 768px) {
-  .explicacionnosotros {
+  .explicacionNosotros {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 992px) {
-  .explicacionnosotros {
+  .explicacionNosotros {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .explicacionnosotros {
+  .explicacionNosotros {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -440,17 +452,17 @@ footer {
 }
 
 /*Defino la grilla de contacto.html*/
-.explicacioncontacto {
-  grid-area: explicacioncontacto;
+.explicacionContacto {
+  grid-area: explicacionContacto;
 }
 
-.grillacontacto {
+.grillaContacto {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-areas: "cabecera" "deseo" "explicacioncontacto" "pie";
+  grid-template-areas: "cabecera" "deseo" "explicacionContacto" "pie";
 }
 
-.explicacioncontacto {
+.explicacionContacto {
   width: 100%;
   display: grid;
   grid-template-rows: 1fr;

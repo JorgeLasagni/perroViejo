@@ -1,48 +1,48 @@
 /*Defino la grilla de tienda.html*/
-.explicaciontienda{
-    grid-area: explicaciontienda;
+.explicacionTienda{
+    grid-area: explicacionTienda;
 }
-.grillatienda{
+.grillaTienda{
     display: grid;
     grid-template-rows: 1fr;
     @include responsive(movile){
         grid-template-areas:
         "cabecera"
         "deseo"
-        "explicaciontienda"
+        "explicacionTienda"
         "pie";
     }
     @include responsive(tabletv){
         grid-template-areas:
         "cabecera           cabecera"
         "deseo              deseo"
-        "explicaciontienda  explicaciontienda"
+        "explicacionTienda  explicacionTienda"
         "pie                pie";
     }
     @include responsive(tableth){
         grid-template-areas:
         "cabecera           cabecera            cabecera"
         "deseo              deseo               deseo"
-        "explicaciontienda  explicaciontienda   explicaciontienda"
+        "explicacionTienda  explicacionTienda   explicacionTienda"
         "pie                pie                 pie";
     }
     @include responsive(desk){
         grid-template-areas:
         "cabecera           cabecera            cabecera"
         "deseo              deseo               deseo"
-        "explicaciontienda  explicaciontienda   explicaciontienda"
+        "explicacionTienda  explicacionTienda   explicacionTienda"
         "pie                pie                 pie";
     }
     @include responsive(deskxl){
         grid-template-areas:
         "cabecera           cabecera            cabecera"
         "deseo              deseo               deseo"
-        "explicaciontienda  explicaciontienda   explicaciontienda"
+        "explicacionTienda  explicacionTienda   explicacionTienda"
         "pie                pie                 pie";
     }
 }
 
-.explicaciontienda{
+.explicacionTienda{
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
